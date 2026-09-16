@@ -1,0 +1,26 @@
+{
+  "name": "fengmian",
+  "version": "0.1.0",
+  "description": "Create clear, evidence-based creator covers and thumbnails from articles, videos, or briefs.",
+  "author": {
+    "name": "Fengmian Contributors"
+  },
+  "license": "Apache-2.0",
+  "keywords": ["cover", "thumbnail", "creator", "design", "封面"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Fengmian",
+    "shortDescription": "Create clear creator covers from source content.",
+    "longDescription": "Fengmian turns an article, video, script, or brief into creator-cover concepts and requested aspect-ratio assets while preserving exact claims, brand provenance, and thumbnail readability.",
+    "developerName": "Fengmian Contributors",
+    "category": "Design",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Use $fengmian to create a 4:3 creator cover from my article.",
+      "使用 $fengmian，根据视频脚本制作 3:4 和 16:9 封面。"
+    ],
+    "brandColor": "#1769E0",
+    "composerIcon": "./skills/fengmian/assets/icon-small.svg",
+    "logo": "./skills/fengmian/assets/icon-large.svg"
+  }
+}

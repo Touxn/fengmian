@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Fengmian logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B3D91"/>
+      <stop offset="1" stop-color="#1769E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <rect x="88" y="104" width="336" height="304" rx="44" fill="#FFFFFF"/>
+  <rect x="136" y="152" width="204" height="52" rx="26" fill="#FFCC33"/>
+  <rect x="136" y="236" width="244" height="30" rx="15" fill="#1769E0"/>
+  <circle cx="192" cy="334" r="48" fill="#FFCC33"/>
+  <path d="M264 374l48-62 68 62z" fill="#1769E0"/>
+</svg>
