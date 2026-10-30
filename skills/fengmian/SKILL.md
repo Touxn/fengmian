@@ -1,99 +1,57 @@
 ---
 name: fengmian
-description: "Create creator covers and thumbnails from an article, video, script, or brief. 制作创作者封面、缩略图及指定比例版本；普通文章排版、海报或完整品牌设计不触发。"
+description: "Create or revise creator covers and thumbnails from an article, video, script, or brief. 制作创作者封面、缩略图及指定比例版本；普通文章排版不触发。"
 ---
 
 # Fengmian
 
-Turn source content into a clear creator cover. Make the topic, viewer benefit, and visual story understandable at thumbnail size while keeping claims and supplied identity accurate.
+Make the content's value visible and give the intended viewer a credible reason to click. Preserve exact requested text, supplied identity, and accepted work. User instructions and confirmed choices take priority.
 
-The user's instructions take precedence over this skill. Do not add a person, optimize publishing copy, use a brand mark, or create extra aspect ratios when the user has said otherwise.
+Choose one clear promise, useful visual evidence, readable hierarchy, and complementary image and text. Thumbnail patterns are hypotheses, not proof of higher clicks. The public skill contains no default portrait, project images, or private history.
 
-## Load guidance only when needed
+## Load guidance when needed
 
-- Read `references/cover-strategy.md` when extracting the message, choosing a route, or proposing alternatives.
-- Read `references/creator-cover-grammar.md` when composing a new visual concept or fixing weak hierarchy.
-- Read `references/layout-spec.md` before producing or validating a requested ratio.
-- Read `references/person-integration.md` only when a supplied portrait or requested person appears in the cover.
-- Read `references/icon-policy.md` only when a named product, platform, organization, logo, or symbolic icon appears.
-- Read `references/adventure-style.md` only when the user requests an adventure or journey style, or when that route clearly fits the content. It is never the default.
+- `references/cover-strategy.md` for new concepts, wording, or reference analysis.
+- `references/creator-cover-grammar.md` for visual hierarchy and composition.
+- `references/layout-spec.md` for formats and display-size checks.
+- `references/person-integration.md` when a person is present.
+- `references/icon-policy.md` when an official or semantic icon is needed.
+- `references/revision-control.md` for local edits, face corrections, and additional ratios.
+- `references/evidence-and-testing.md` for source quality or requested performance testing.
+- `references/adventure-style.md` only when an adventure or journey concept is selected.
 
-Reuse guidance already read during revisions. Do not reload unrelated references.
+Reuse guidance already read. Do not restart concept discovery for a local edit.
 
-## Input and privacy contract
+## Resolve the task and choose the operation
 
-Use any available combination of source content, publishing title, target audience, proof, platform, ratio, supplied assets, and restrictions. Source content plus a working title is enough to begin when the missing details are low risk.
+From the conversation, determine the topic, audience, placement, available evidence, publishing title, exact on-cover text, output count and ratio, supplied assets, requested operation, and protected content. Ask only about a missing fact that materially affects the work. Preserve explicit no-person, no-text, and output-count instructions.
 
-- Never assume access to earlier conversations, private files, portraits, logos, or approved covers. Inspect only assets actually available in the current task.
-- This public skill contains no default identity. If no portrait is supplied, default to a no-person composition.
-- Treat a supplied portrait as task-scoped identity input. Do not copy it into the skill or a public repository.
-- Ask only when a missing fact would materially change identity, legal asset use, or the truth of a claim.
+For a new unselected topic, present three meaningful content-specific concepts and recommend one. Explain the promise, main image, wording, and tradeoff. Wait for the user's selection before generating. Differences should concern the reason to click or visual relationship. An existing selection satisfies this gate; follow an explicit instruction to skip proposals.
 
-Supported default deliverables:
+For a local revision, edit the selected target and protect everything outside the requested scope. A title change does not authorize a face change. For a face correction, use the accepted scene and the supplied original portrait. For an additional ratio, adapt the approved concept without requesting a new selection. Cropping is permitted only when authorized and essential content survives. Separate candidates from accepted work.
 
-- 3:4 portrait: 1086 x 1448
-- 4:3 landscape: 1448 x 1086
-- 16:9 landscape: 1280 x 720
+When no ratio is specified, infer it from the named platform. If the placement does not settle it, make one 4:3 concept first; do not add outputs beyond the request. Explicit sizes and counts take priority.
 
-If no ratio is given, choose the format implied by the named platform. If the platform does not settle it, make one 4:3 concept first. Create multiple ratios only when requested, and compose each ratio independently rather than cropping.
+## Build the visual promise
 
-## Workflow
+Inspect available finished outputs, screenshots, and meaningful comparisons before inventing a metaphor. Prefer a real result when it directly supports the promise. Distinguish actual output from illustration and do not infer time savings, price, or quality from appearance alone.
 
-1. Inspect the source, requested text, supplied portrait, screenshots, and permitted product assets.
-2. Extract the topic anchor, intended viewer, concrete transformation, strongest proof, emotional tone, and one useful unanswered question.
-3. Separate the publishing title from the cover phrase. Preserve the publishing title unless optimization was requested. Compress the cover phrase to one topic and one value signal.
-4. Align four signals: headline, dominant prop, person action when present, and background world. Each should point to the same subject without repeating the same graphic.
-5. Choose a scene from where the task happens, where its result is used, or the simplest physical metaphor that explains it. Keep the background supportive and quiet.
-6. When alternatives are requested, propose the requested number, or three when unspecified. For each, state the cover phrase, click promise, visual metaphor, main object, person role if any, strongest proof, and claim or clutter risk.
-7. Reject a route before generation when the topic is not recognizable at thumbnail size, the prop and action tell different stories, more than three primary focal groups remain, or the result resembles a product ad instead of a creator cover.
-8. Resolve named entities through `references/icon-policy.md`. Prefer user-supplied or official assets, and label neutral generated symbols as semantic icons rather than official logos.
-9. Sketch the thumbnail as two or three large silhouettes: headline, subject or person-prop cluster, and optional proof strip. Add detail only after this hierarchy works.
-10. Generate or assemble the requested ratio. Protect exact text and official assets from model redraws; use deterministic typography or compositing when available.
-11. Inspect full size and at about 10 percent size. Regenerate when the title loses priority, the prop becomes unclear, a gesture disappears, the face is inaccurate, or the background reads before the topic.
-12. Verify pixel dimensions and report only files that actually exist and passed inspection.
+The first focal point may be a result, comparison, person, object, or short phrase. Use scale, grouping, contrast, and negative space to give supporting elements clear roles. Do not mandate title-first hierarchy, a fixed person position, or physical interaction.
 
-## Copy and evidence rules
+Let the image show evidence, situation, contrast, or emotion. The cover phrase can frame the result or question, while the publishing title adds context. Evaluate them together. Preserve every character of approved wording. When wording is delegated, simplify redundancy without inventing claims.
 
-- Prefer a short topic phrase plus one value dimension. Keep exact product names, versions, code identifiers, and necessary English.
-- Preserve user-approved wording. Do not silently rewrite a publishing title or exact on-canvas phrase.
-- Use proof such as `实测`, a duration, a result, or a case only when the source or completed work supports it.
-- Avoid unsupported superlatives, rankings, financial promises, guarantees, and claims that erase the creator's editorial role.
-- Leave part of the answer for the article or video. Reveal the subject and value without giving away every method or conclusion.
-- Do not add filler labels, invented metrics, fake interfaces, or decorative English.
+A person may contribute recognition, trust, explanation, emotion, or action. No person is required. When a real person is requested, use the original portrait supplied for the task as the identity authority. This public skill has no bundled portrait; if none is supplied, default to a no-person composition unless the user explicitly requests otherwise. Protect face, glasses, age, and expression in revisions. For depicted physical contact, verify anatomy, support, and lighting.
 
-## Visual rules
+Use supplied or verified official assets where needed and cite provenance. A semantic icon can explain an abstract concept but must not impersonate a brand. Do not require an icon for every subject. Adapt reference mechanisms into an original composition; public views do not establish a thumbnail's causal performance.
 
-- Headline is the first focal point. The dominant object or person-object action is second.
-- Use one broad scene or atmospheric field, not a wall of cards, devices, logos, and explanatory diagrams.
-- Use one primary product or concept mark. Add a second only when the relationship between two entities is the story.
-- Translate abstract capabilities into one understandable object or action: a manual, toolbox, bridge, shelf, cockpit, production line, comparison, or finished result.
-- When a person is present, connect hand, gaze, body direction, lighting, and depth to the dominant object. Do not paste an unrelated portrait into a corner.
-- Keep exact text, faces, hands, and official marks free of distortion.
+## Generate, inspect, and deliver
 
-## Validation and handoff
+Use the supported image tool and its current instructions. Do not claim unsupported masks, deterministic edits, or pixel guarantees. Preserve accepted baselines, use candidate versions, and stop repeating a method that damages protected features.
 
-Save final assets in the current workspace under `assets/fengmian/` using versioned slugs:
+1. Check the selected concept, exact text, output count, and dimensions already established; ask only about a material unresolved gap.
+2. At full size inspect wording, evidence, logo fidelity, and identity when present. Check anatomy and contact where depicted. Verify actual PNG dimensions with `scripts/check_png_dimensions.py` when available.
+3. For local edits compare protected regions with the accepted baseline at equal scale. Separate visual preservation, measured identical pixels, and user approval.
+4. Review the cover with its publishing title at the intended display size. When unknown, use aspect-preserving previews 320 and 160 pixels wide as labeled heuristics, not measured recognition tests. Inspect face and logo fidelity separately at useful size.
+5. Save versioned files under `assets/fengmian/` in the current workspace. Record the selected promise, relevant inputs and provenance, per-ratio state, protected regions, and checks performed. Do not publish, monitor, test, or create extra variants without the user's request.
 
-- `<slug>-3x4-v01.png`
-- `<slug>-4x3-v01.png`
-- `<slug>-16x9-v01.png`
-- `icons/<slug>-concept-icon-v01.png` for a generated semantic icon
-
-Use `scripts/check_png_dimensions.py` to verify PNG dimensions when shell execution is available.
-
-Report:
-
-- clickable output paths and pixel dimensions
-- selected cover phrase and visual metaphor
-- any publishing-title change the user authorized
-- source links for official logos or product imagery
-- whether each key icon is user-supplied, official, or a generated semantic icon
-- whether thumbnail hierarchy, exact text, identity when applicable, and requested-ratio checks passed
-
-Do not call a concept, prompt, static check, or unverified file a delivered cover.
-
-## Invocation examples
-
-`使用 $fengmian。根据这篇文章先给我三组 4:3 封面命题，不使用人物。`
-
-`Use $fengmian to create independent 3:4 and 16:9 covers from this video script. Use the portrait I supplied only for this task.`
+Return clickable output paths, verified dimensions, relevant asset sources, and material limitations. Never infer approval or improved click-through rate from generation success or visual inspection.

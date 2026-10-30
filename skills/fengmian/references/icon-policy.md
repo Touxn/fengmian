@@ -1,6 +1,6 @@
 # Official and semantic icon policy
 
-Use this reference whenever the cover involves a brand, product, platform, organization, tool, file type, technical concept, or abstract capability.
+Use this reference when the selected design needs a product logo or semantic icon. An abstract topic does not itself require an icon.
 
 ## Icon classes
 
@@ -45,7 +45,7 @@ Download the official asset when allowed and practical. Save it as a local refer
 
 ## When no official icon exists
 
-Create a brand-neutral semantic icon when:
+If an icon helps the selected concept, use a brand-neutral semantic icon when:
 
 - The concept has no official identity
 - Official sources show no icon
@@ -56,7 +56,7 @@ Do not imitate a nearby brand or construct a trademark-like wordmark.
 
 ## Semantic icon brief
 
-Generate the icon as a separate asset before generating the cover.
+Generate a separate icon asset when reuse, independent editing, or precise placement makes it useful. Otherwise it may be part of the authorized cover generation.
 
 Define:
 
@@ -70,7 +70,7 @@ Define:
 - Transparent or simple solid background
 - No text unless the text is an exact technical identifier required by the topic
 
-Keep the icon understandable at 64 to 128 pixels. Use simple geometry, a strong silhouette, and no more than two semantic cues.
+Keep the icon understandable at its intended display size. Use simple geometry, a clear silhouette, and few semantic cues when useful.
 
 Examples:
 
@@ -87,11 +87,11 @@ Save generated icons under:
 
 `assets/fengmian/icons/<slug>-concept-icon-v01.png`
 
-Inspect the icon before cover generation. Regenerate it when the silhouette is unclear, the metaphor is misleading, text is malformed, or the result resembles an existing brand mark.
+Inspect separately generated icons before use and integrated icons in the final cover. Revise misleading, malformed, or unclear symbols.
 
 ## Cover placement
 
-- Use one dominant icon or product object by default.
+- Let the result, comparison, person, or icon lead according to its contribution to the promise.
 - Add a second icon only when the relationship is the central message.
 - Group supporting icons into one subordinate cluster.
 - Keep icon cards free of repeated brand text when the headline already names the product.
@@ -107,4 +107,4 @@ Report each key asset using one of these labels:
 - `官方素材` with source link
 - `生成的意象图标` with its concept description
 
-If an official search finds no reliable asset, state that an意象图标 was used to avoid inventing an official identity.
+If a semantic icon replaces an unavailable official asset, report that choice accurately. Do not imply a search or generation occurred when it did not.

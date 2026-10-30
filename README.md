@@ -2,7 +2,7 @@
 
 Fengmian is an open-source Codex skill and plugin for turning articles, videos, scripts, and briefs into clear creator covers and thumbnails.
 
-It focuses on four aligned signals: headline, dominant prop, person action when present, and background world. It also keeps claims grounded, treats brand assets carefully, and composes each requested aspect ratio independently.
+It helps creators choose a clear promise, show relevant evidence, and coordinate the image, cover wording, and publishing title. It protects supplied identity and approved edits, treats claims and brand assets carefully, and adapts each requested aspect ratio.
 
 This public repository contains no portrait, private conversation, real client project, API key, proprietary font, or third-party logo.
 
@@ -13,7 +13,8 @@ This public repository contains no portrait, private conversation, real client p
 - Person-present and no-person routes
 - Official-logo and neutral semantic-icon handling
 - Optional adventure or journey style
-- Exact-text and thumbnail-scale validation
+- Exact-text protection and thumbnail-scale validation
+- Optional source-aware hypotheses and performance testing
 - Dependency-free PNG dimension checker
 
 ## Install

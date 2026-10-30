@@ -1,94 +1,93 @@
 # Fengmian layout specification
 
-Read this reference before generating or validating a requested aspect ratio. The public skill intentionally bundles no personal or project-specific cover image; derive geometry from these relationships and from references supplied in the current task.
+Use the content promise and its strongest visual evidence to choose the composition. Treat geometry, palette, and portrait placement as design decisions unless the user has approved them as constraints.
 
-## Shared hierarchy
+## One clear first focal point
 
-Preserve this reading order:
+The first focal point may be a finished result, a comparison, a person, a short phrase, or a meaningful object. Choose what makes the video's value easiest to understand.
 
-1. Cover phrase
-2. Dominant object, visible result, or integrated person-object action
-3. Optional proof strip
+- Establish a dominant focal point and subordinate supporting elements.
+- Group elements by meaning so viewers can understand their relationship at small size.
+- Avoid competing promises, decorative fragments, or details that require close inspection.
+- Do not require a title-first reading order, a fixed person side, a physical prop, or a universal element count.
+- A result-led image, an intentional collage, a strong portrait, and a sparse text-led cover are all available when supported by the content.
 
-Use no more than three primary focal groups. Keep negative space around every character and, when present, the face and hands. Choose colors from the subject or campaign rather than defaulting every topic to the same blue technology scene.
+## Text and image complement each other
 
-Avoid interface grids, scattered document cards, repeated icons, network nodes, dashboard walls, and decorative light trails unless the subject genuinely requires them.
+- Let the image carry evidence, situation, contrast, or emotion.
+- Let cover wording sharpen the result or question. The publishing title can supply the tool, audience, method, or scope.
+- Assess the title and cover together. Avoid repeating the full publishing title on the image without a clear reason.
+- Preserve every character of approved wording and every required product name or technical identifier. Shorten only when wording decisions are delegated.
+- Break lines at semantic boundaries. Recompose the layout or add a line before shrinking important text until it is unreadable.
+- Keep text contrast and spacing clear. Outlines and yellow emphasis are optional tools, not universal requirements.
+- Keep hair, hands, effects, and background texture from obscuring text or altering character forms.
+- Evidence may occupy the main image. It does not need to be confined to a small proof strip.
+- Do not add unsupported numbers, rankings, speed claims, or fabricated outcomes.
 
-## Headline
+## Brand consistency with composition freedom
 
-- Use one or two lines when possible.
-- Break at semantic boundaries and keep protected product names or versions together.
-- Emphasize one value word with a topic or brand-supported accent color.
-- Maintain strong light-dark separation and a clean outline when needed.
-- Keep hair, hands, icons, glow, particles, and background texture out of the text zone.
-- Use a proof strip only when it adds verified credibility, and keep it subordinate.
-- Move detailed promises into the publishing title instead of building a long subtitle.
+Keep recognizable identity and deliberate typographic choices consistent. Allow crop, host position, scene, scale, and palette to respond to the topic.
 
-## 3:4 portrait, 1086 x 1448
+Choose colors, typography, and composition for the subject and existing campaign. An approved campaign takes priority over generic defaults. Preserve its layout, outfit, and treatment during local edits. The public skill bundles no portraits or project-specific image templates.
 
-- Place the headline within roughly the upper 27 to 34 percent.
-- Use two lines by default; allow three only when exact text requires it.
-- Put the dominant object in the lower-left, lower-center, or central field.
-- If a person is present, place them in the lower-right or integrate them through the center when the action requires contact.
-- Keep the person roughly within 28 to 38 percent of canvas width unless the visual metaphor needs a larger body action.
-- Keep platform overlay and lower metadata areas clear.
+## Evidence and background
 
-## 4:3 landscape, 1448 x 1086
+- Inspect actual outputs, comparisons, screenshots, or important UI details before inventing a metaphor. Choose the most useful evidence for the promise.
+- Do not present an invented result as an observed output. Label illustrative imagery when it could be mistaken for evidence.
+- Use official product imagery or verified logos when relevant. An unbranded semantic symbol may explain a function but must not impersonate an official logo.
+- Make the evidence large and simple enough to understand at the intended display size.
+- For comparisons, keep conditions reasonably comparable and disclose differences that affect the conclusion.
+- Let the background support the focal relationship through contrast, space, or context.
+- Cinematic scenes, interface details, editorial cutouts, and physical metaphors are available when useful. Remove clutter because it interferes with meaning, not because it belongs to a banned visual genre.
+- Use [person-integration.md](person-integration.md) when a person is present. Physical interaction is optional.
 
-- Reserve approximately x=4% to x=66% and y=5% to y=45% for the headline.
-- Place the dominant object across the lower-left or center-left field.
-- If a person is present, place them within the rightmost 25 to 32 percent, extending the interacted object or arms into the center.
-- Keep at least 40 pixels of clear space around text at the target size.
-- Use one broad background plane to connect title, object, and person.
+## Format adaptation
 
-## 16:9 landscape, 1280 x 720
+Use the actual platform placement, overlays, and crop behavior when known. Do not assume that a rule for a YouTube horizontal thumbnail applies to every portrait feed.
 
-- Place the headline in the left 45 to 58 percent.
-- Limit it to one or two lines and shorten the cover phrase when needed.
-- Put the dominant object in the center or center-left.
-- If a person is present, use the rightmost 23 to 30 percent and shift inward when interaction would otherwise disappear.
-- Keep the lower-right clear for common duration overlays.
-- Use fewer background details because the cover will appear smaller in feeds.
+| Ratio | Useful composition considerations |
+| --- | --- |
+| 3:4 | Vertical organization can separate a promise from its evidence. Avoid excessive text stacking and preserve room for the main image. |
+| 4:3 | Use the wider field for a comparison, a scene, or breathing room around the main subject. |
+| 16:9 | Prioritize legibility in small feeds. Keep critical information away from the lower-right duration overlay where applicable. |
 
-## Person-present variants
+No ratio requires a fixed headline zone, face width, or person position. A strong subject may take most of the canvas, and a cover may use little or no text when the publishing title supplies the context.
 
-- Read `person-integration.md`.
-- Keep the person smaller than the headline's overall visual mass.
-- Treat the person and object as one action cluster with a readable touch point and weight cue.
-- Preserve the supplied identity, natural expression, coherent lighting, and continuous color across face and neck.
-- Keep one outfit across ratios in the same campaign.
+For an additional ratio, choose repositioning, canvas expansion, or a fresh composition according to the content and preservation requirements. Crop only when permitted and when essential text, face, evidence, and meaning survive. Avoid a damaging mechanical crop or visible nonuniform stretching. Keep campaign identity, outfit, and graphic treatment consistent unless a variation is requested.
 
-When no portrait is supplied, omit the person and give the dominant object or result enough scale to become the second focal point.
+## Actual dimensions and ratio checks
 
-## Object and background
+Check the exported file rather than the size requested in a prompt. For target ratio a:b, verify `width × b == height × a`.
 
-- Use one dominant semantic object, finished result, or broad scene.
-- Prefer a physical metaphor that makes an abstract function visible.
-- Use verified official product imagery only when it is relevant and legally available.
-- Use a neutral semantic icon when no reliable official asset exists.
-- Keep objects large enough to recognize at thumbnail size.
-- Let background establish place, atmosphere, depth, and contrast without explaining features.
+Examples of exact ratios include 1086 × 1448 for 3:4, 1448 × 1086 for 4:3, and 1536 × 864 for 16:9. These are examples, not permanent platform specifications. Explicit requested dimensions take priority.
 
-## Text fitting and revisions
+Negligible rounding normalization may be appropriate when the composition already matches the target and the permitted workflow supports it. Record original and delivered dimensions and check for deformation. Strict local-preservation edits retain the original canvas so region comparisons remain meaningful.
 
-- Preserve every approved character, product name, version, and identifier.
-- Reduce font size before breaking a protected phrase.
-- Reject any composition where an object, outline, hand, hair, or effect touches the headline.
-- Treat 3:4, 4:3, and 16:9 as independent artifacts.
-- Leave approved ratios unchanged when feedback names only one format.
-- For identity correction, return to the supplied original portrait rather than repeatedly editing an already altered face.
+## Revision discipline
+
+Use [revision-control.md](revision-control.md) to choose the operation and inspect protected regions.
+
+- Treat each requested ratio as an independently checked artifact.
+- Leave approved ratios unchanged when feedback names one format.
+- For title-only or face-only work, preserve the accepted composition and unrelated regions.
+- Use the original portrait as identity authority, with the accepted campaign as the guide for outfit and treatment.
+- Return to the accepted baseline if a revision introduces drift or causes repeated repairs.
 
 ## Thumbnail validation
 
-At about 10 percent size, confirm:
+Review at the expected display size when known. Otherwise, use aspect-preserving previews at 320 pixels wide and 160 pixels wide as explicitly labeled heuristic proxies. These sizes are diagnostic choices, not universal platform requirements.
 
-- topic is identifiable within one second
-- cover phrase remains readable
-- only one value promise is visible
-- dominant object remains recognizable
-- person, when present, supports the message without overtaking the title
-- background reads as one scene
-- text, face, and hands remain unobstructed
-- requested ratios feel related without being cropped copies
+Check the cover with its publishing title, then inspect the cover alone:
 
-Finally verify pixel dimensions with `../scripts/check_png_dimensions.py` or another deterministic image inspector.
+- Is the first focal point clear and connected to the video's promise?
+- Is the important text readable at the intended display size?
+- Can the result, comparison, or other primary evidence be understood?
+- Do title, cover wording, and image contribute useful complementary information?
+- Do secondary elements remain subordinate?
+- Is there a relevant unanswered question without concealing the basic topic?
+- Does the promise accurately reflect the content?
+- Do requested formats retain campaign identity and accepted continuity?
+
+The image need not explain the whole video without its title. Sparse and no-text covers are valid. Grayscale or blur checks may help diagnose contrast but are optional.
+
+Inspect identity, logos, anatomy, and Chinese character forms separately at full size. Do not claim measured one-second recognition without a viewer test, or infer click performance from legibility alone.
